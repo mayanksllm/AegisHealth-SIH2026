@@ -1,0 +1,20 @@
+{
+"monotonic_counter": 104291,
+"chip_id": "ATECC608A-040058A9F3E8",
+"payload": {
+"heart_rate": 72,
+"patient_id": "ABHA-91-8842-1920-4412",
+"timestamp": 1726588800
+},
+"merkle_root": "806443c22ad656eec102c77174db4989eef9ef4599c7d0d0f41cfa9795ff05c1",
+"proof_path": [
+{
+"position": "right",
+"hash": "b2f761501c56a3eec5bfb20a4be35cfb0c793ff06c646b96e54e44923e3e0e7a"
+},
+{
+"position": "left",
+"hash": "35a812da114d59a5840bc2bcf22a014948a4c8651bc57530be9080eec956ab12"
+}
+]
+}
