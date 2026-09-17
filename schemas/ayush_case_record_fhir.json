@@ -1,0 +1,75 @@
+{
+"resourceType": "Bundle",
+"id": "aegishealth-ayush-case-record-001",
+"type": "document",
+"timestamp": "2026-09-17T15:20:00+05:30",
+"entry": [
+{
+"resource": {
+"resourceType": "Composition",
+"id": "ayush-intake-composition",
+"status": "final",
+"type": {
+"coding": [
+{
+"system": "https://nrces.in/ndhm/fhir/r4/CodeSystem/ndhm-record-type",
+"code": "AyushCaseTaking",
+"display": "Ayush Clinical Intake & Repertorization Record"
+}
+]
+},
+"subject": { "reference": "Patient/ABHA-91-8842-1920-4412" },
+"section": [
+{
+"title": "Ayush Clinical Profile (Prakriti & Dosha Assessment)",
+"text": {
+"status": "generated",
+"div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Prakriti: Vata-Pitta predominant. Agni: Vishama. Nadi: Sarpa-gati dominant."
+}
+},
+{
+"title": "Attested Sensor Vitals",
+"entry": [
+{ "reference": "Observation/sensor-attested-vitals-001" }
+]
+}
+]
+}
+},
+{
+"resource": {
+"resourceType": "Observation",
+"id": "sensor-attested-vitals-001",
+"status": "final",
+"code": {
+"coding": [
+{
+"system": "http://loinc.org",
+"code": "8867-4",
+"display": "Heart rate"
+}
+]
+},
+"valueQuantity": {
+"value": 72,
+"unit": "beats/minute",
+"system": "http://unitsofmeasure.org",
+"code": "/min"
+},
+"meta": {
+"extension": [
+{
+"url": "https://aegishealth.in/fhir/StructureDefinition/silicon-attestation",
+"extension": [
+{ "url": "monotonicCounter", "valueInteger": 104291 },
+{ "url": "signerChipId", "valueString": "ATECC608A-040058A9F3E8" },
+{ "url": "ecdsaSignature", "valueString": "30450221008df8e20220" },
+{ "url": "merkleRoot5Min", "valueString": "806443c22ad656eec102c77174db4989eef9ef4599c7d0d0f41cfa9795ff05c1" }
+]
+}
+]
+}
+}
+}
+]
+}
